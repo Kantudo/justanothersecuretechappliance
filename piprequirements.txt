@@ -1,0 +1,14 @@
+python-telegram-bot
+requests
+os
+loging
+csv
+arparse
+json
+time
+datetime
+threading
+requests
+gtts
+python-vlc
+

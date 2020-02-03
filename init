@@ -1,0 +1,13 @@
+if [ ! -d env ]; then
+    /usr/bin/python3 -m venv env
+    source env/bin/activate
+    ./env/bin/pip install --upgrade pip
+    while IFS= read -r line; do
+        ./env/bin/pip install $line
+    done < 'piprequirements.txt'
+fi
+
+export "justanother_token"="802427772:AAG-qnElkMYmgRJih81NUbnvFUjBKZVmyhU"
+
+./env/bin/python tele.py 
+
