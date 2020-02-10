@@ -11,4 +11,4 @@ threading
 requests
 gtts
 python-vlc
-
+RPi.GPIO

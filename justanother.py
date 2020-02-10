@@ -1,13 +1,16 @@
-def play(file):
+def play(file, position = 0, duration = 10):
     import vlc, time
     instance = vlc.Instance()
     player = instance.media_player_new()
     media = instance.media_new(file)
     player.set_media(media)
     player.audio_set_volume(70)
-    player.set_position(0)
     player.play()
-    time.sleep(10)
+    player.set_position(0.25)
+
+
+    time.sleep(duration)
+    player.stop()
 
 class tts(object):
     def __init__(self, arg):
